@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo page — responsible disclosure</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+       max-width:640px;margin:80px auto;padding:0 20px;color:#1f2328;line-height:1.6}
+  .box{border:1px solid #d0d7de;border-left:4px solid #d97706;background:#fff8ec;
+       padding:14px 16px;border-radius:6px;margin:24px 0;font-size:14px}
+  h1{font-size:26px;margin-bottom:4px}
+  .sub{color:#656d76;font-size:14px}
+</style>
+</head>
+<body>
+
+<h1>Demo page</h1>
+<p class="sub">Served from a domain used in a security research demonstration.</p>
+
+<div class="box">
+  <strong>⚠️ This is a demonstration page only.</strong><br>
+  It was created to document a domain-ownership-verification flaw in a hosting
+  provider, as part of responsible disclosure research (USENIX Security '26,
+  “Alias Equals Zone?”).<br>
+  This page has no forms, collects no input, sets no cookies, and is not used
+  for phishing or for contacting any third party.
+</div>
+
+<p>If you reached this page by following a link, that link exists only to show
+that an unrelated party could create arbitrary URLs under a domain they do not
+control.</p>
+
+<p>Reference: <em>Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain
+Hosting Service via CNAME-Following Cross-Domain Verification</em>,
+USENIX Security 2026.</p>
+
+</body>
+</html>
